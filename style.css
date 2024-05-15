@@ -1,0 +1,303 @@
+
+
+/* style.css*/
+/* These are only for font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background: #f1f1f1;
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #ecfce4;
+}
+
+.left>img {
+    width: 70%;
+}
+
+.right {
+    width: 50%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    height: 100vh;
+    border: none;
+}
+
+.myform {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 70px;
+}
+
+.labels {
+    text-align: start;
+    align-self: flex-start;
+    font-family: 'poppins';
+    margin-bottom: 8px;
+    color: rgba(50, 48, 48, 0.8);
+}
+
+.createaccount {
+    color: rgba(50, 48, 48, 0.8);
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.image {
+    width: 30%;
+    display: none;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0, 50%);
+}
+
+.input-field:focus {
+    border: 2px solid rgb(48, 58, 104);
+}
+
+.btn {
+    background-color: rgb(115, 137, 93, 100%);
+    color: white;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    font-weight: 100px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.9;
+    margin-bottom: 18px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+.logoandtext{
+    border: 2px solid black;
+    background-color: darkblue;
+}
+
+#leaftext {
+    font-family: 'Aladin';
+    font-weight: 300;
+    font-size: xx-large;
+    margin-left: 8px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.allLogos {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 12px solid #f1f1f1;
+    cursor: pointer;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+#logo::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: #f1f1f1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+}
+
+#logo::before {
+    content: '';
+    display: block;
+    width: 35%;
+    height: 32%;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    z-index: 10;
+}
+
+.main-logo {
+    width: 40px;
+    height: 44px;
+    background-color: #007fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastText {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(74, 74, 74);
+    margin-top: 20px;
+}
+
+.login-link {
+    color: #73895D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    opacity: 0.8;
+}
+
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 23px;
+}
+
+input {
+    outline: none;
+    border: 1px solid #B0BAC3;
+    color: #B0BAC3;
+    margin-top: 4px;
+}
+
+.padding {
+    margin-bottom: 20px;
+    position: relative;
+}
+.icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    color: #888; 
+  }
+  
+.input-field {
+    padding-left: 50px; 
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    border: 1px solid #ccc; 
+}
+
+.fullname {
+    background-image: url('./assets/user.svg'); 
+    background-position: 15px center; 
+}
+
+.password {
+    background-image: url('./assets/lock.svg');
+    background-position: 15px center; 
+}
+
+.email {
+    background-image: url('./assets/mail.svg'); 
+    background-position: 15px center; 
+}
+
+.logo>img {
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+    cursor: pointer;
+}
+.logo img:hover {
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 768px) {
+    .left {
+        display: none; 
+    }
+
+    .right {
+        width: 100%; 
+        border-radius: 15px; 
+    }
+
+    .image {
+        display: block;
+        margin-top: 8px;
+    }
+    .right .createaccount{
+        margin-top: 20px;
+    }
+    #leaftext #vectorlogo{
+        font-size: 10px;
+        margin-left: 4px;
+        margin-top: 50px;
+    }
+    .padding{
+        margin-bottom: 10px;
+    }
+    .allLogos {
+        margin-top: 8px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+}

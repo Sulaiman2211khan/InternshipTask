@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="right">
+            <form class="myform" onsubmit="return validateForm()">
+                <div>
+                    <img src="./assets/Vector.svg" alt="" width="35px" id="vectorlogo">
+                    <span id="leaftext">Leaf</span>
+                </div>
+                <img src="./assets/logo.png" alt="" srcset="" class="image">
+                <h2 class="createaccount">Create Account</h2>
+                <div style="width: 100%; margin-top: 20px;">
+                    <div class="padding">
+                        <i class="fa fa-user icon"></i>
+                        <label for="fullname" class="labels">Full Name</label>
+                        <input class="input-field fullname" type="text" placeholder="Enter Full Name" id="fullName">
+
+                    </div>
+                    <div class="padding">
+                        <label for="email" class="labels">Email</label>
+                        <input class="input-field email" type="email" placeholder="Enter Your Email" id="email">
+                    </div>
+
+                    <div class=" padding">
+                        <label for="password" class="labels">Password</label>
+                        <input class="input-field password" type="password" placeholder="Enter Your Password"
+                            id="password">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" value="Submit">Sign-Up</button>
+                <span
+                    style="color: #B0BAC3; font-family: 'poppins', sans-serif; margin-bottom: 10px; font-size: large;">-
+                    OR -</span>
+                <div class="allLogos">
+                    <div class="logo">
+                        <img src="./assets/google.svg" alt="">
+                        <img src="./assets/facebook.svg" alt="">
+                        <img src="./assets/apple.svg" alt="">
+                    </div>
+                </div>
+                <p style="font-family: 'Poppins', sans-serif; color: rgb(74,74,74); margin-top: 20px;" class="lastText">
+                    Already have an account?
+                    <a href="login.php" class="login-link">Login</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Validation
+        function validateForm() {
+            // Get form inputs
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Check if inputs are empty
+            if (fullName === "" || email === "" || password === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
