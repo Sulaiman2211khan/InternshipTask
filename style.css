@@ -300,4 +300,7 @@ input {
         cursor: pointer;
         margin-right: 5px;
     }
+    .lastText{
+        font-size: 13px;
+    }
 }
